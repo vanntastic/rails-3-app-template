@@ -8,7 +8,7 @@ test_gems.each { |g| gem g, :group => "test" }
 gem 'mysql2'
 
 # Database Stuff
-file 'config/database.example.yml', <<-CODE
+file 'config/database.yml', <<-CODE
   # SQLite version 3.x
   #   gem install sqlite3-ruby (not necessary on OS X Leopard)
   development:
@@ -64,7 +64,7 @@ CODE
 
 file 'config/database.production.yml', <<-DB
   production:
-    adapter: mysql
+    adapter: mysql2
     database: production
     username: 
     password: 

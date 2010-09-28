@@ -11,3 +11,4 @@ This is my standard rails 3 app template, it consists of the following assumptio
 Usage
 -----
 
+    rails new [app_name] -J -m http://vanntastic@github.com/vanntastic/rails-3-app-template.git

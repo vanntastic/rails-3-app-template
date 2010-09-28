@@ -5,6 +5,7 @@ This is my standard rails 3 app template, it consists of the following assumptio
 
 - use test-spec and test/spec/rails
 - mongrel for the dev web server
+- mysql or sqlite for the db layer
 - jquery
 - textmate (optional)
 

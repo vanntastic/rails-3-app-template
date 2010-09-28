@@ -106,29 +106,29 @@ JS
 # CSS Stuff
 file 'public/stylesheets/app.css', <<-CSS
   
-  /* CSS Mini Reset */
+/* CSS Mini Reset */
 
-  html, body, div, form, fieldset, legend, label
-  {
-   margin: 0;
-   padding: 0; 
-  }
+html, body, div, form, fieldset, legend, label
+{
+ margin: 0;
+ padding: 0; 
+}
 
-  table
-  {
-   border-collapse: collapse;
-   border-spacing: 0;
-  }
+table
+{
+ border-collapse: collapse;
+ border-spacing: 0;
+}
 
-  th, td
-  {
-   text-align: left;
-   vertical-align: top;
-  }
+th, td
+{
+ text-align: left;
+ vertical-align: top;
+}
 
-  h1, h2, h3, h4, h5, h6, th, td, caption { font-weight:normal; }
+h1, h2, h3, h4, h5, h6, th, td, caption { font-weight:normal; }
 
-  img, img a { border: 0; }
+img, img a { border: 0; }
   
 CSS
 

@@ -8,7 +8,6 @@ test_gems.each { |g| gem g, :group => "test" }
 gem 'mysql2'
 
 # Database Stuff
-
 file 'config/database.example.yml', <<-CODE
   # SQLite version 3.x
   #   gem install sqlite3-ruby (not necessary on OS X Leopard)
@@ -73,11 +72,11 @@ file 'config/database.production.yml', <<-DB
 DB
 
 # Javascript stuff
-
+remove_file 'public/javascripts/application.js'
 file 'public/javascripts/application.js', <<-JS
 
 function load_fx () {
-  // body...
+  // behaviors
 }
 
 $(document).ready(function() {
@@ -103,6 +102,35 @@ jQuery.ajaxSetup({
 })
 
 JS
+
+# CSS Stuff
+file 'public/stylesheets/app.css', <<-CSS
+  
+  /* CSS Mini Reset */
+
+  html, body, div, form, fieldset, legend, label
+  {
+   margin: 0;
+   padding: 0; 
+  }
+
+  table
+  {
+   border-collapse: collapse;
+   border-spacing: 0;
+  }
+
+  th, td
+  {
+   text-align: left;
+   vertical-align: top;
+  }
+
+  h1, h2, h3, h4, h5, h6, th, td, caption { font-weight:normal; }
+
+  img, img a { border: 0; }
+  
+CSS
 
 remove_file "public/index.html"
 remove_file "config/database.example.yml"
